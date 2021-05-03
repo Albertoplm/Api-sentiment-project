@@ -17,7 +17,7 @@ Endpoint
     tag5 = 
     tag6 = 
 
-We insert a quote in the database.
+We insert a quote in the database. (please add one tag per field)
 
 
 # @GET
