@@ -69,6 +69,9 @@ def insert_quote_():
     pos.insert_quote(quote, author, tag1, tag2, tag3, tag4, tag5, tag6)
     return "Se ha introducido la quote en la base de datos"
 
-
+@app.route("/newquotes_df", methods=["POST"])
+def insert_quote_dic_(df):
+    pos.insert_quote_dic(df)
+    return "Se ha introducido la quote en la base de datos"
 
 app.run("0.0.0.0", 5000, debug=True)
