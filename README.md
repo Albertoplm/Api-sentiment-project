@@ -1,6 +1,6 @@
 # Api-sentiment-project-Famous-Quotes
 
-![API](https://github.com/Albertoplm/Shark-Project/blob/main/images/api.jpg)
+![API](https://github.com/Albertoplm/Api-sentiment-project/blob/main/images/api.jpg)
 
 # How it works?
 
