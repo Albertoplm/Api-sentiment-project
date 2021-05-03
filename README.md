@@ -1,5 +1,6 @@
 # Api-sentiment-project-Famous-Quotes
 
+![API](https://github.com/Albertoplm/Shark-Project/blob/main/images/api.jpg)
 
 # How it works?
 
@@ -7,7 +8,16 @@
 Endpoint
 - /newquote
 
-We insert a phrase in the database.
+    quote = 
+    author = 
+    tag1 = 
+    tag2 = 
+    tag3 = 
+    tag4 = 
+    tag5 = 
+    tag6 = 
+
+We insert a quote in the database.
 
 
 # @GET
@@ -19,6 +29,22 @@ It´s shows all the quotes in the database
 
 ```
 url_quotes = "http://localhost:5000/quotes/"
+```
+
+- /authors
+
+It´s shows all the authors in the database
+
+```
+url_quotes = "http://localhost:5000/authors/"
+```
+
+- /tags
+
+It´s shows all the tags in the database
+
+```
+url_quotes = "http://localhost:5000/tags/"
 ```
 
 - /quotes/<author>
@@ -55,6 +81,8 @@ url_quotes_sentiment_lte = "http://localhost:5000/quotes_sentiment_lte/<sentimen
 
 
 # Additional information 
+
+02/05/2021
 
 Authors: 188
 

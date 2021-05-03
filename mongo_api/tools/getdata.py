@@ -8,6 +8,25 @@ def quotes():
     quotes = list(collection.find(query,{"_id": 0, "sentiment_compound":0}))
     return quotes
 
+def authors():
+    """
+    Function that returns all authors from the database
+    """
+    query = {}
+    quotes = list(collection.distinct("author"))
+    return quotes
+
+def tags():
+    """
+    Function that returns all authors from the database
+    """
+    query = {}
+    quotes = list(collection.distinct("tag1") + collection.distinct("tag2") + collection.distinct("tag3") + collection.distinct("tag4") + collection.distinct("tag5") + collection.distinct("tag6"))
+     #"tag2" and 'tag3' and 'tag4' and 'tag5' and 'tag6'))
+    quotes = set(quotes)
+    quotes = list(quotes)
+    return quotes
+
 def quotes_author(author):
     """
     Function that returns all quotes from an author

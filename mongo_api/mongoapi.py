@@ -19,6 +19,16 @@ def index():
     )
     return md_template
 
+@app.route("/authors")
+def authors_():
+    quotes = get.authors()
+    return jsonify(quotes)
+
+@app.route("/tags")
+def tags_():
+    quotes = get.tags()
+    return jsonify(quotes)
+
 @app.route("/quotes")
 def quotes_():
     quotes = get.quotes()
